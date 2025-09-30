@@ -9,7 +9,7 @@ Run any Python script: `uv run script_name.py` (automatically installs dependenc
 ## Guidelines
 
 1. If I don't specify args, I don't want the script to take any args
-2. Just 1 function per script, no more
+2. Just 1 clearly-named function per script, no more. Call it what it does, so it can be imported and used as a service. Not just "main".
 3. Add dependencies in a script comment at the top so it can be run with "uv run"
 4. Document usage in a docstring
 5. Preferred libraries: typer over argparse, httpx over requests, polars over pandas, pytorch over tensorflow
